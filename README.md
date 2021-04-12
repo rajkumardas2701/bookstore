@@ -6,7 +6,7 @@
 
 ## Built With
 
-- React
+- React and Redux
 - HTML and CSS
 - Heroku
 - Eslint and Stylelint as linters
