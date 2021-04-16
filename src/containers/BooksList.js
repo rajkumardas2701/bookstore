@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import { connect } from 'react-redux';
+import Book from '../components/Book';
 
-const BooksList = () => {
+const BooksList = ({ books }) => {
+  const data = books.map((book) => (<Book key={`book-${book.id}`} book={book} />));
   const columns = [{
     Header: 'Book ID',
     accessor: 'id',
@@ -26,8 +29,12 @@ const BooksList = () => {
   );
 };
 
-const mapStateToProps = (state) => {
-
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+
+const mapStateToProps = (state) => ({
+  books: state.booksReducer.books,
+});
 
 export default connect(mapStateToProps, null)(BooksList);
