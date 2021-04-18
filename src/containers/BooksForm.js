@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { actionCreateBook } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
-  const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci - Fi'];
   const [state, setState] = useState({ title: '', category: '' });
 
   const handleChange = ({ target: { name, value } }) => {
@@ -26,7 +26,9 @@ const BooksForm = ({ createBook }) => {
     <>
       <h1>Add a new book</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" id="title" name="title" onChange={handleChange} />
+        <label htmlFor="book-title">
+          <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
+        </label>
         <label htmlFor="book-category">
           Category:
           <select id="category" name="category" onChange={handleChange}>
