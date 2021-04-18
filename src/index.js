@@ -1,21 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import finalReducer from './reducers/index';
+import store from './reducers/index';
 import App from './components/App';
-
-const initial = {
-  books: [
-    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 1', category: 'Horror' },
-    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 2', category: 'kids' },
-    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 3', category: 'Sci-fi' },
-    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 4', category: 'Adventure' },
-  ],
-};
-
-const store = createStore(finalReducer, initial);
 
 ReactDOM.render(
   <React.StrictMode>
