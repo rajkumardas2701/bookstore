@@ -4,7 +4,11 @@ const BooksForm = () => {
   const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [state, setState] = useState({ title: '', category: '' });
 
-  const { title, category } = state;
+  const handleChange = ({ target: { name, value } }) => {
+    setState({ [name]: value });
+  };
+
+  // const { title, category } = state;
 
   return (
     <>
@@ -12,11 +16,11 @@ const BooksForm = () => {
       <form>
         <label htmlFor="book-title">
           Title:
-          <input type="text" id="book-title" name="book-title" />
+          <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
         </label>
         <label htmlFor="book-category">
           Category:
-          <select id="book-category">
+          <select id="category" name="category" onChange={handleChange}>
             {
               CATEGORIES.map((category) => (
                 <option key={category} value={category}>{category}</option>
