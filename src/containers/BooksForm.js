@@ -8,15 +8,19 @@ const BooksForm = () => {
     setState({ [name]: value });
   };
 
-  // const { title, category } = state;
+  const { title, category } = state;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+  };
 
   return (
     <>
       <h1>Add a new book</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="book-title">
           Title:
-          <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
+          <input type="text" id="title" name="title" onChange={handleChange} />
         </label>
         <label htmlFor="book-category">
           Category:
