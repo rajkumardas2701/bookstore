@@ -2,7 +2,7 @@
 
 > This App is built using React and redux
 
-![screenshot](.\public\home.png)
+![screenshot](https://github.com/rajkumardas2701/bookstore/blob/milestone-3/public/home1.png)
 
 ## Built With
 

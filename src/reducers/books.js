@@ -1,14 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
-const initial = {
-  books: [
-    { id: '1', title: 'Test', category: 'Horror' },
-    { id: '2', title: 'Test', category: 'Horror' },
-    { id: '3', title: 'Test', category: 'Horror' },
-  ],
-};
-
-const booksReducer = (state = initial, action) => {
+const booksReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [...state,
@@ -19,10 +11,7 @@ const booksReducer = (state = initial, action) => {
         },
       ];
     case REMOVE_BOOK:
-      return [
-        state.slice(0, action.index),
-        state.slice(action.index + 1, state.length),
-      ];
+      return state.filter((book) => book.id !== action.book.id);
     default:
       return state;
   }
