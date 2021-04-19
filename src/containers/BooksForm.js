@@ -6,20 +6,27 @@ import { actionCreateBook } from '../actions/index';
 const BooksForm = ({ createBook }) => {
   const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci - Fi'];
   const [state, setState] = useState({ title: '', category: '' });
+  let error = false;
 
   const handleChange = ({ target: { name, value } }) => {
     setState({ ...state, [name]: value });
   };
 
   const { title, category } = state;
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    createBook({
-      id: Math.floor(Math.random() * 100) + 1,
-      title,
-      category,
-    });
-    setState({ title: '', category: '' });
+    if (title === '' || category === '') {
+      error = true;
+    } else {
+      createBook({
+        id: Math.floor(Math.random() * 100) + 1,
+        title,
+        category,
+      });
+      setState({ title: '', category: '' });
+    }
+    return error;
   };
 
   return (
@@ -27,6 +34,7 @@ const BooksForm = ({ createBook }) => {
       <h1>Add a new book</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="book-title">
+          Title:
           <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
         </label>
         <label htmlFor="book-category">
@@ -40,7 +48,9 @@ const BooksForm = ({ createBook }) => {
           </select>
         </label>
         <button type="submit">Submit</button>
+        <h2>{error ? 'Enter required fields' : ''}</h2>
       </form>
+
     </>
   );
 };
