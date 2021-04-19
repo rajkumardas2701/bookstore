@@ -2,7 +2,7 @@
 
 > This App is built using React and redux
 
-![screenshot](.\public\home.png)
+![screenshot](.\public\home1.png)
 
 ## Built With
 
