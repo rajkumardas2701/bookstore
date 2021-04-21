@@ -1,5 +1,6 @@
 import { combineReducers, createStore } from 'redux';
 import booksReducer from './books';
+import filterReducer from './filter';
 
 const initialState = {
   books: [
@@ -12,6 +13,7 @@ const initialState = {
 
 const rootReducer = combineReducers({
   books: booksReducer,
+  filter: filterReducer,
 });
 
 const store = createStore(rootReducer, initialState);
