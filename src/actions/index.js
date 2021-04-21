@@ -18,5 +18,5 @@ const actionChangeFilter = (filter) => ({
 });
 
 export {
-  CREATE_BOOK, REMOVE_BOOK, actionCreateBook, actionRemoveBook, actionChangeFilter,
+  CREATE_BOOK, REMOVE_BOOK, CHANGE_FILTER, actionCreateBook, actionRemoveBook, actionChangeFilter,
 };
