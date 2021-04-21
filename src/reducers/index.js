@@ -4,7 +4,7 @@ import booksReducer from './books';
 const initialState = {
   books: [
     { id: Math.floor(Math.random() * 100) + 1, title: 'Book 1', category: 'Horror' },
-    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 2', category: 'kids' },
+    { id: Math.floor(Math.random() * 100) + 1, title: 'Book 2', category: 'Kids' },
     { id: Math.floor(Math.random() * 100) + 1, title: 'Book 3', category: 'Sci-fi' },
     { id: Math.floor(Math.random() * 100) + 1, title: 'Book 4', category: 'Adventure' },
   ],
