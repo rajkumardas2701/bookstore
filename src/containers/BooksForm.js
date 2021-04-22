@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { actionCreateBook } from '../actions/index';
+import { CATEGORIES } from '../components/CategoryFilter';
 
 const BooksForm = ({ createBook }) => {
-  const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci - Fi'];
   const [state, setState] = useState({ title: '', category: '' });
   let error = false;
 
