@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { actionCreateBook } from '../actions/index';
 import { CATEGORIES } from '../components/CategoryFilter';
+import '../styles/BookForm.css';
 
 const BooksForm = ({ createBook }) => {
   const [state, setState] = useState({ title: '', category: '' });
@@ -16,7 +17,7 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (title === '' || category === '') {
+    if (title === '' || category === '' || category === 'Category') {
       error = true;
     } else {
       createBook({
@@ -30,28 +31,21 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <>
-      <h1>Add a new book</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="book-title">
-          Title:
-          <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
-        </label>
-        <label htmlFor="book-category">
-          Category:
-          <select id="category" name="category" onChange={handleChange}>
-            {
-              CATEGORIES.map((category) => (
-                <option key={category} value={category}>{category}</option>
-              ))
-            }
-          </select>
-        </label>
-        <button type="submit">Submit</button>
+    <div className="BookFormSection">
+      <h1 id="addNewBook">ADD NEW BOOK</h1>
+      <form onSubmit={handleSubmit} className="formInput">
+        <input type="text" id="input-title" name="title" onChange={handleChange} value={state.title || ''} placeholder="Book title" />
+        <select id="category" name="category" onChange={handleChange} placeholder="Category">
+          {
+            CATEGORIES.map((category) => (
+              <option key={category} value={category} id="categoryText">{category}</option>
+            ))
+          }
+        </select>
+        <button className="AddBookBtn" type="submit"><p id="addBooktext">ADD BOOK</p></button>
         <h2>{error ? 'Enter required fields' : ''}</h2>
       </form>
-
-    </>
+    </div>
   );
 };
 

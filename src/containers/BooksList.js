@@ -26,19 +26,11 @@ const BooksList = ({
         </div>
 
       </div>
-      <table className="books-table">
-        {/* <thead>
-          <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Action</th>
-          </tr>
-        </thead> */}
+      <section className="books-table">
         <tbody>
           {data}
         </tbody>
-      </table>
+      </section>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci - Fi'];
+const CATEGORIES = ['Category', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci - Fi'];
 
 const CategoryFilter = ({ handleFilterChange }) => (
   <select name="category" onChange={handleFilterChange}>

@@ -65,3 +65,8 @@
   height: 17px;
   background-color: #0290ff;
 }
+
+.books-table {
+  padding-bottom: 40px;
+  background-color: #fafafa;
+}
