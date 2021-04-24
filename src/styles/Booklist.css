@@ -3,7 +3,7 @@
   height: 95px;
   margin: 0 0 38px;
   padding: 23px 99px 27px 100px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,21 +13,21 @@
   width: 240px;
   height: 37px;
   margin: 6px 47px 2px 0;
-  font-family: Montserrat;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0290ff; 
+  color: #0290ff;
 }
 
 #books {
   width: 59px;
   height: 16px;
   margin: 18px 41px 11px 0;
-  font-family: Montserrat;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -42,7 +42,7 @@
   height: 16px;
   margin: 18px 664px 11px 41px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;

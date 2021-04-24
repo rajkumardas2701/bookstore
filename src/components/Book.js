@@ -14,13 +14,28 @@ const Book = ({ book, deleteBook }) => (
         <span className="bookControl" id="edit">Edit</span>
       </div>
     </div>
-    {/* <div>
+    <div className="progressSection">
+      <div className="completionBar" />
+      <div>
+        <p className="percent">
+          {Math.floor(Math.random() * 100)}
+          %
+        </p>
+        <p className="completeText">Completed</p>
+      </div>
+    </div>
+    <div className="chapterSection">
+      <p className="currentChap">
+        CURRENT CHAPTER
+      </p>
+      <p className="chapNo">
+        Introduction
+      </p>
+      <button type="button" className="progressBtn">
+        <span className="progressTxt">UPDATE PROGRESS</span>
+      </button>
 
     </div>
-    <div>
-
-    </div> */}
-
   </section>
 
 );
