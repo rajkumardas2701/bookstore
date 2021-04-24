@@ -27,14 +27,14 @@ const BooksList = ({
 
       </div>
       <table className="books-table">
-        <thead>
+        {/* <thead>
           <tr>
             <th>Id</th>
             <th>Title</th>
             <th>Category</th>
             <th>Action</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {data}
         </tbody>
