@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Book.css';
 
 const Book = ({ book, deleteBook }) => (
-  <tr>
+  <tr className="book">
     <td>{book.id}</td>
     <td>{book.title}</td>
     <td>{book.category}</td>
