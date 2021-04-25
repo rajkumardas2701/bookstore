@@ -32,7 +32,7 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <div className="BookFormSection">
-      <h1 id="addNewBook">ADD NEW BOOK</h1>
+      <div id="addNewBook">ADD NEW BOOK</div>
       <form onSubmit={handleSubmit} className="formInput">
         <input type="text" id="input-title" name="title" onChange={handleChange} value={state.title || ''} placeholder="Book title" />
         <select id="category" name="category" onChange={handleChange} placeholder="Category">

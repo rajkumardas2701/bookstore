@@ -5,6 +5,7 @@ import Book from '../components/Book';
 import { actionChangeFilter, actionRemoveBook } from '../actions/index';
 import { CategoryFilter } from '../components/CategoryFilter';
 import '../styles/Booklist.css';
+import accountImg from '../images/user.png';
 
 const BooksList = ({
   books, removeBook, filter, changeFilter,
@@ -16,22 +17,19 @@ const BooksList = ({
   const filteredBooks = filter === 'ALL' ? books : books.filter((book) => book.category === filter);
   const data = filteredBooks.map((book) => (<Book key={`book-${book.id}`} book={book} deleteBook={() => handleRemoveBook(book)} />));
   return (
-    <>
+    <div className="books-section">
       <div className="navBar">
         <header-1 id="logo">Bookstore CMS</header-1>
         <p id="books">BOOKS</p>
         <CategoryFilter handleFilterChange={handleFilterChange} id="categoryDropdown" />
         <div className="logoSec">
-          <img src="..\images\user.png" alt="logo" id="logo1" />
+          <img src={accountImg} alt="logo" id="logo1" />
         </div>
-
       </div>
       <section className="books-table">
-        <tbody>
-          {data}
-        </tbody>
+        {data}
       </section>
-    </>
+    </div>
   );
 };
 

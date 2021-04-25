@@ -2,6 +2,7 @@
   width: 1200px;
   margin: 0px 100px 40px 100px;
   border-top: solid 1px #e8e8e8;
+  background-color: #fafafa;
 }
 
 #addNewBook {
@@ -16,6 +17,7 @@
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888888;
+  background-color: #fafafa;
 }
 
 #input-title {

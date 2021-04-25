@@ -15,7 +15,9 @@ const Book = ({ book, deleteBook }) => (
       </div>
     </div>
     <div className="progressSection">
-      <div className="completionBar" />
+      <div className="completionBar">
+        <div className="completionBar-inner" />
+      </div>
       <div>
         <p className="percent">
           {Math.floor(Math.random() * 100)}
