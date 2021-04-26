@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { actionCreateBook } from '../actions/index';
 import { CATEGORIES } from '../components/CategoryFilter';
+import '../styles/BookForm.css';
 
 const BooksForm = ({ createBook }) => {
   const [state, setState] = useState({ title: '', category: '' });
@@ -30,28 +31,20 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <>
-      <h1>Add a new book</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="book-title">
-          Title:
-          <input type="text" id="title" name="title" onChange={handleChange} value={state.title || ''} />
-        </label>
-        <label htmlFor="book-category">
-          Category:
-          <select id="category" name="category" onChange={handleChange}>
-            {
-              CATEGORIES.map((category) => (
-                <option key={category} value={category}>{category}</option>
-              ))
-            }
-          </select>
-        </label>
-        <button type="submit">Submit</button>
-        <h2>{error ? 'Enter required fields' : ''}</h2>
+    <div className="BookFormSection">
+      <div className="addNewBook">ADD NEW BOOK</div>
+      <form onSubmit={handleSubmit} className="formInput">
+        <input type="text" className="input-title" name="title" onChange={handleChange} value={state.title || ''} placeholder="Book title" />
+        <select className="category" name="category" onChange={handleChange} placeholder="Category">
+          {
+            CATEGORIES.map((category) => (
+              <option key={category} value={category} className="categoryText">{category}</option>
+            ))
+          }
+        </select>
+        <button className="AddBookBtn" type="submit"><p className="addBooktext">ADD BOOK</p></button>
       </form>
-
-    </>
+    </div>
   );
 };
 

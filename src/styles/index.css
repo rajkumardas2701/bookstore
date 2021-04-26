@@ -25,3 +25,9 @@ code {
     'Courier New',
     monospace;
 }
+
+#root {
+  width: 100%;
+  background-color: #f5f6fa;
+  padding: 149px 0 123px 0;
+}

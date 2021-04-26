@@ -1,0 +1,106 @@
+.BookFormSection {
+  width: 1200px;
+  margin: 0 100px 40px 100px;
+  border-top: solid 1px #e8e8e8;
+  background-color: #fafafa;
+}
+
+.addNewBook {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 0;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  background-color: #fafafa;
+}
+
+.input-title {
+  width: 664px;
+  height: 45px;
+  margin: 19px 34px 0 0;
+  padding: 0 571px 0 17px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.input-title::placeholder {
+  width: 76px;
+  height: 19px;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.category {
+  width: 400px;
+  height: 45px;
+  margin: 19px 10px 0;
+  padding: 6px 15px 9px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.AddBookBtn {
+  width: 184px;
+  height: 45px;
+  margin: 19px 0 0 34px;
+  padding: 12.8px 19px 14.2px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border-style: none;
+}
+
+.addBooktext {
+  width: 143px;
+  height: 18px;
+  font-family: RobotoSlab Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.categoryText {
+  width: 72px;
+  height: 19px;
+  margin: 7px 167px 4px 0;
+  font-family: Montserrat Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
