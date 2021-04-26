@@ -17,7 +17,7 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (title === '' || category === '' || category === 'Category') {
+    if (title === '' || category === '') {
       error = true;
     } else {
       createBook({
@@ -43,7 +43,6 @@ const BooksForm = ({ createBook }) => {
           }
         </select>
         <button className="AddBookBtn" type="submit"><p id="addBooktext">ADD BOOK</p></button>
-        <h2>{error ? 'Enter required fields' : ''}</h2>
       </form>
     </div>
   );

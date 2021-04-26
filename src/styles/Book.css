@@ -103,16 +103,16 @@
 }
 
 .completionBar {
-  width: 68px;
-  height: 68px;
-  border-style: solid;
-  border-width: 5px;
-  border-image-source: conic-gradient(#307bbe 0% 64%, #e8e8e8 64% 100%);
-  border-image-slice: 1;
   border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  background: #ddd;
+  margin-right: 10px;
+  background-image: linear-gradient(290deg,#307bbe 0 64%, #e8e8e8 64% 100%);
 }
 
-.completionBar > .completionBar-inner {
+.completionBar-inner {
   box-sizing: border-box;
   border-radius: 50%;
   width: 50px;
