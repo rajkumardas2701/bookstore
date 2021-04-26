@@ -109,7 +109,7 @@
   display: flex;
   background: #ddd;
   margin-right: 10px;
-  background-image: linear-gradient(290deg,#307bbe 0 64%, #e8e8e8 64% 100%);
+  background-image: linear-gradient(290deg, #307bbe 0 64%, #e8e8e8 64% 100%);
 }
 
 .completionBar-inner {
