@@ -79,12 +79,11 @@
 
 #comments {
   width: 73px;
-  margin: 3px 0 2px 0;
+  margin: 3px 10px 2px 0;
 }
 
 #remove {
   width: 84px;
-  margin: 3px 0 2px 0;
   background: white;
   border: solid 1px #e8e8e8;
   border-top: none;
