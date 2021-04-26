@@ -19,11 +19,11 @@ const BooksList = ({
   return (
     <div className="books-section">
       <div className="navBar">
-        <header-1 id="logo">Bookstore CMS</header-1>
-        <p id="books">BOOKS</p>
-        <CategoryFilter handleFilterChange={handleFilterChange} id="categoryDropdown" />
+        <header-1 id="main-logo">Bookstore CMS</header-1>
+        <p className="books">BOOKS</p>
+        <CategoryFilter handleFilterChange={handleFilterChange} className="categoryDropdown" />
         <div className="logoSec">
-          <img src={accountImg} alt="logo" id="logo1" />
+          <img src={accountImg} alt="logo" className="logo1" />
         </div>
       </div>
       <section className="books-table">

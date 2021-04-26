@@ -5,7 +5,7 @@
   background-color: #fafafa;
 }
 
-#addNewBook {
+.addNewBook {
   width: 174px;
   height: 24px;
   margin: 29px 524px 19px 0;
@@ -20,7 +20,7 @@
   background-color: #fafafa;
 }
 
-#input-title {
+.input-title {
   width: 664px;
   height: 45px;
   margin: 19px 34px 0 0;
@@ -30,7 +30,7 @@
   background-color: #fff;
 }
 
-#input-title::placeholder {
+.input-title::placeholder {
   width: 76px;
   height: 19px;
   font-family: Montserrat Arial, Helvetica, sans-serif;
@@ -48,7 +48,7 @@
   flex-direction: row;
 }
 
-#category {
+.category {
   width: 400px;
   height: 45px;
   margin: 19px 10px 0;
@@ -76,7 +76,7 @@
   border-style: none;
 }
 
-#addBooktext {
+.addBooktext {
   width: 143px;
   height: 18px;
   font-family: RobotoSlab Arial, Helvetica, sans-serif;
@@ -91,7 +91,7 @@
   margin: 0;
 }
 
-#categoryText {
+.categoryText {
   width: 72px;
   height: 19px;
   margin: 7px 167px 4px 0;

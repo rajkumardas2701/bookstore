@@ -17,7 +17,7 @@
   background-color: #fafafa;
 }
 
-#logo {
+#main-logo {
   width: 240px;
   height: 37px;
   margin: 6px 47px 2px 0;
@@ -31,7 +31,7 @@
   color: #0290ff;
 }
 
-#books {
+.books {
   width: 59px;
   height: 16px;
   margin: 18px 41px 11px 0;
@@ -45,7 +45,7 @@
   color: #121212;
 }
 
-#categoryDropdown {
+.categoryDropdown {
   width: 105px;
   height: 16px;
   margin: 18px 664px 11px 41px;
@@ -73,7 +73,7 @@
   align-content: center;
 }
 
-#logo1 {
+.logo1 {
   width: 40px;
   height: 40px;
 }

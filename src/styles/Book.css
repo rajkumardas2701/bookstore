@@ -65,7 +65,9 @@
   color: #4386bf;
 }
 
-.bookControl {
+.comments {
+  width: 73px;
+  margin: 3px 10px 2px 0;
   height: 19px;
   font-family: RobotoSlab Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -77,22 +79,35 @@
   color: #4386bf;
 }
 
-#comments {
-  width: 73px;
-  margin: 3px 10px 2px 0;
-}
-
-#remove {
+.remove {
   width: 84px;
   background: white;
   border: solid 1px #e8e8e8;
   border-top: none;
   border-bottom: none;
+  height: 19px;
+  font-family: RobotoSlab Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
-#edit {
+.edit {
   width: 27px;
   margin: 3px 298px 2px 17px;
+  height: 19px;
+  font-family: RobotoSlab Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .progressSection {

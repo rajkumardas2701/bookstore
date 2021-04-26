@@ -9,9 +9,9 @@ const Book = ({ book, deleteBook }) => (
       <p className="bookTitle">{book.title}</p>
       <p className="bookAuthor">Suzanne Collins</p>
       <div className="BookControlSection">
-        <span className="bookControl" id="comments">Comments</span>
-        <button type="button" id="remove" className="bookControl" onClick={deleteBook}>Remove</button>
-        <span className="bookControl" id="edit">Edit</span>
+        <span className="comments">Comments</span>
+        <button type="button" className="remove" onClick={deleteBook}>Remove</button>
+        <span className="edit">Edit</span>
       </div>
     </div>
     <div className="progressSection">
